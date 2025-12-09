@@ -104,6 +104,9 @@ void MainWindow::appelAPI() {
     ville=info.getville();
     qDebug() << "nouvelle ville : " << ville;
 
+    qDebug() << "lancement appel API ";
+    qDebug() << info.apiRequest(api_key,ville);
+
 
 }
 void MainWindow::change_labels(int value) {
