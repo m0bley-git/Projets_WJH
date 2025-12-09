@@ -14,12 +14,14 @@ SOURCES += \
     WJH.cpp \
     api.cpp \
     main.cpp \
-    system_meteo.cpp
+    system_meteo.cpp \
+    filtre_meteo.cpp
 
 HEADERS += \
     WJH.h \
     api.h \
-    system_meteo.h
+    system_meteo.h \
+    filtre_meteo.h
 
 FORMS += \
     WJH.ui
