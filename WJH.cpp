@@ -94,24 +94,23 @@ void MainWindow::onCITY(QString ville) {
 }
 
 void MainWindow::appelAPI() {
-
     QString api_key;
     QString ville;
-
     qDebug() << "config appel API ";
     api_key=info.getAPIkey();
     qDebug() << "nouvelle API KEY";
-
     ville=info.getville();
     qDebug() << "nouvelle ville : " << ville;
-
     qDebug() << "lancement appel API ";
     info.setmeteo_data(info.apiRequest(api_key,ville));
     qDebug() << info.getmeteo_data();
     QString cleanDataM = fi.trieData(info.getmeteo_data());
 
-
+    ui->label_API_vent->setText(QString("vitesse de vent en noeud : %1").arg(fi.getVitesse_vent(), 0, 'f', 2));
+    ui->label_API_temp->setText(QString("température en °C : %1").arg(fi.getTemperature(), 0, 'f', 1));
+    ui->label_API_atmo->setText(QString("pression atmospherique : %1").arg(fi.getPression_atmo(), 0, 'f', 1));
 }
+
 void MainWindow::change_labels(int value) {
     switch (value) {
     case 0:
