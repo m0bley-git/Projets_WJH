@@ -22,7 +22,15 @@ Le projet est conçu pour **apprendre et expérimenter le développement en C++ 
 - Saisie manuelle pour compléter ou corriger certaines données  
 
 ---
+## ⚙️ Prérequis
+Avant de compiler et exécuter WJH, assurez-vous d’avoir :  
+- **Tout OS compatible avec Qt**
+- **Qt 5 ou Qt 6** installé avec Qt Creator  
+- **qmake** et **make** disponibles dans le terminal  
+- **Clé API OpenWeather** pour récupérer automatiquement les données météo (optionnel pour usage manuel)
 
+  ---
+  
 ## 🚀 Installation
 ```bash
 git clone https://github.com/m0bley-git/Projets_WJH
